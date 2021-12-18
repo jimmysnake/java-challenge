@@ -7,6 +7,12 @@ import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
+/**
+ * Employee API controller
+ * 
+ * @author Jimmie
+ *
+ */
 @RestController
 @RequestMapping("/api/v1")
 public class EmployeeController {
@@ -14,9 +20,9 @@ public class EmployeeController {
     @Autowired
     private EmployeeService employeeService;
 
-    public void setEmployeeService(EmployeeService employeeService) {
-        this.employeeService = employeeService;
-    }
+    //public void setEmployeeService(EmployeeService employeeService) {
+    //    this.employeeService = employeeService;
+    //}
 
     @GetMapping("/employees")
     public List<Employee> getEmployees() {
